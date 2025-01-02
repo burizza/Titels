@@ -1,0 +1,122 @@
+.result {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* или замените на top: 0; left: 0; right: 0; bottom: 0; */
+}
+
+.result-table{
+    font-family: var(--font-jost), sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+
+    padding: 30px;
+    width: 500px;
+    height: 600px;
+    background: white;
+}
+
+.result-table h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.result-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.result-indicators {
+    font-size: 30px;
+    font-weight: 300;
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-button {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+}
+
+.result-repeat-game {
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(29, 151, 111);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.result-repeat-game:hover {
+    background: rgb(10, 165, 170);
+}
+
+
+.result-menu {
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(134, 67, 67);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.result-menu:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* АДАПТИВ */
+
+@media screen and (max-width: 596px) {
+    .result-table {
+        width: 250px;
+        height: 300px;
+    }
+
+    .result-title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .result-indicators {
+        font-size: 20px;
+        gap: 10px;
+    }
+}
+.settings {
+    width: 100px;
+    padding: 10px;
+    background: rgb(134, 67, 67);
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
