@@ -1,3 +1,53 @@
+
+@media screen and (min-width: 290px) and (max-width: 560px) {
+
+
+
+
+    .title{
+        width: 80vw;
+        text-align: center;
+        word-spacing: -2px;
+        line-height: 1.2;
+        
+        
+    }
+
+    .boxAll {
+        gap: 7px;
+
+    
+    }
+
+    .boxButton{
+        width: 300px !important;
+        gap: 3px !important;
+        justify-content: center;
+        gap: 8px !important;
+        
+        
+    }
+
+    .settings, .static, .start {
+        width: 60px !important;
+        font-size: 12px;
+        
+        
+
+        
+    
+    }
+
+
+
+
+
+
+
+}
+
+
+
 .Alldiv {
     display: flex;
     font-weight: 400;
@@ -31,7 +81,6 @@
     display: grid;
     grid-template-columns: repeat(2, 80px);
     grid-template-rows: repeat(2, 80px);
-    gap: 10px;
 
 }
 

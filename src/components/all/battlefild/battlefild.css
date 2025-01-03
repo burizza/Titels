@@ -1,7 +1,9 @@
 
+
 .battlefield {
+    height: 90vh;
+    width: 90vw;
     display: flex;
-    margin-top: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
