@@ -81,7 +81,7 @@ export default function BattleField () {
         };
         fetchImages();
     }, [])
-    console.log(<fetchImages />)
+    
 
     const reducer = (state, action) => {
         switch (action.type) {
@@ -211,13 +211,15 @@ export default function BattleField () {
                 mistakes: mistake,
                 timeSpend: elapsedTime,
                 date: new Date().toISOString(),
+                
             };
+            console.log(gameResult);
 
-           const storeResults = JSON.parse(localStorage.getItem('gameResult') as string) || [];
 
             const updateResults = JSON.parse(localStorage.getItem('gameResult') || '[]');
             updateResults.push(gameResult);
             localStorage.setItem('gameResult', JSON.stringify(updateResults));
+            
 
 
            if (currentScore > maxScore) {
@@ -226,7 +228,9 @@ export default function BattleField () {
            }
 
         }
+        
     }, [gameOver, state.matchedTiles]);
+    
 
 
     return(

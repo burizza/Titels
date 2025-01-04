@@ -14,7 +14,7 @@ export default function Statistic() {
 
     // Получение данных из localStorage
     useEffect(() => {
-        const storedResults = JSON.parse(localStorage.getItem("gameResults") as string) || [];
+        const storedResults = JSON.parse(localStorage.getItem("gameResult") as string) || [];
         setResults(storedResults);
     }, []);
 
